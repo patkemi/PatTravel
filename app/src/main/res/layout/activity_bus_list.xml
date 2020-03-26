@@ -25,14 +25,13 @@
             android:textColor="@android:color/black"
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
             android:layout_gravity="start"
-            android:layout_marginRight="100dp"
-            android:layout_marginEnd="100dp" />
+            android:layout_marginRight="84dp"
+            android:layout_marginEnd="84dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_margin="16dp"
             android:src="@drawable/profile"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
@@ -41,11 +40,15 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewBus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        />
 
     <ImageButton
         android:id="@+id/imageButton"
