@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PatTravel</string>
+    <string name="bus_button">Bus button</string>
+    <string name="hey_patience">Hey, Patience</string>
+    <string name="what_is_your_next_trip">What is your next trip?</string>
+    <string name="from">From</string>
+    <string name="lagos">Bangalore</string>
+    <string name="abuja">Chennal</string>
+    <string name="to">To</string>
+    <string name="choose_button">choose button</string>
+    <string name="seats">How many seats you want?</string>
+    <string name="seatsno">seats</string>
+    <string name="comfort">Choose your comfort!</string>
+    <string name="ac_bus">AC Bus</string>
+    <string name="nonac_bus">Non-AC Bus</string>
+    <string name="sleeper">Sleeper</string>
+    <string name="choose_your_trip_date">Choose your trip date</string>
+    <string name="find_your_bus">FIND YOUR BUS</string>
+    <string name="todo">TODO</string>
+    <string name="toolbar_title">Choose your  bus</string>
+    <string name="number">4.2</string>
+    <string name="book">BOOK</string>
+    <string name="press">Press</string>
+</resources>
+

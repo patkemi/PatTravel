@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="#E8EAF6">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile"
+        android:layout_alignParentRight="true"
+        app:civ_border_width="2dp"
+        android:layout_margin="16dp"
+        app:civ_border_color="#FF000000"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textViewShowDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@id/profile_image"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@id/profile_image" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hey_patience"
+        android:layout_below="@id/profile_image"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/what_is_your_next_trip"
+        android:layout_below="@id/textView"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/cardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbacground"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageDotOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/imagedotone"
+            app:civ_border_color="#E91E63"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
+        <View
+            android:id="@+id/vertDivider"
+            android:layout_width="2dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="#E8EAF6"
+            android:layout_below="@id/imageDotOne"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageDotTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            app:civ_border_width="2dp"
+            android:layout_below="@id/vertDivider"
+            android:src="@drawable/imagedottwo"
+            app:civ_border_color="#4AE91E"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
+
+        <View
+            android:id="@+id/hortDivider"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#E8EAF6"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@id/vertDivider"
+            android:layout_toEndOf="@id/vertDivider"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:layout_marginLeft="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/twonOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lagos"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="36dp"
+            android:layout_alignParentStart="true"
+            android:textColor="#E91E63"
+            android:layout_marginStart="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/from"/>
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:layout_marginLeft="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/twonOne"/>
+
+        <TextView
+            android:id="@+id/twonTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/abuja"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="36dp"
+            android:layout_alignParentStart="true"
+            android:textColor="#E91E63"
+            android:layout_marginStart="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/to"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageClick"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_swap_vert_black_24dp"
+            app:civ_border_color="#E8EAF6"
+            app:civ_border_width="2dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginLeft="280dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chooseHolder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/cardbacground"
+        android:layout_below="@id/cardHolder"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_your_trip_date"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentStart="true"
+            android:textColor="#353333"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"
+            />
+
+        <ImageView
+            android:id="@+id/datePicking"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_date_range_black_24dp"
+            android:contentDescription="@string/todo"
+            android:layout_marginLeft="280dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lastHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_below="@id/chooseHolder"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/textMany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seats"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentStart="true"
+            android:textColor="#3A3A3A"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="120dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/textMany"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/textComfort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comfort"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentStart="true"
+            android:textColor="#393737"
+            android:layout_below="@id/recyclerView"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="120dp" />
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:id="@+id/acbusHolder"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/textComfort"
+         android:layout_marginTop="8dp"
+         >
+
+         <TextView
+             android:id="@+id/acbustextone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentLeft="true"
+             android:layout_marginStart="16dp"
+             android:layout_marginLeft="16dp"
+             android:layout_marginEnd="16dp"
+             android:layout_marginRight="16dp"
+             android:background="@drawable/acbusbutton"
+             android:contentDescription="@string/ac_bus"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="@string/ac_bus"
+             android:textAlignment="center"
+             android:textColor="#A89E9E"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toStartOf="@+id/nonacbustexttwo"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.0" />
+
+         <TextView
+             android:id="@+id/nonacbustexttwo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/acbusbutton"
+             android:contentDescription="@string/nonac_bus"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="@string/nonac_bus"
+             android:textAlignment="center"
+             android:textColor="#9C9494"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toStartOf="@+id/sleepertextthree"
+             app:layout_constraintStart_toEndOf="@+id/acbustextone"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.0" />
+
+         <TextView
+             android:id="@+id/sleepertextthree"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="16dp"
+             android:layout_marginLeft="16dp"
+             android:layout_marginEnd="16dp"
+             android:layout_marginRight="16dp"
+             android:background="@drawable/acbusbutton"
+             android:contentDescription="@string/ac_bus"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="@string/sleeper"
+             android:textAlignment="center"
+             android:textColor="#A39B9B"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/nonacbustexttwo"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="1.0" />
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttonHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_below="@id/acbusHolder"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/lastbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/lastbutton"
+                android:contentDescription="@string/ac_bus"
+                android:text="@string/find_your_bus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/buttonText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/find_your_bus"
+                android:textColor="#F1F8E9"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.551" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

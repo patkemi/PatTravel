@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/cardHolderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/cardbacground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageDotOneList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="125dp"
+            android:src="@drawable/imagedotone"
+            app:civ_border_color="#E91E63"
+            app:civ_border_width="2dp" />
+
+        <View
+            android:id="@+id/vertDividerList"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageDotOneList"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#E8EAF6" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageDotTwoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vertDividerList"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/imagedottwo"
+            app:civ_border_color="#4AE91E"
+            app:civ_border_width="2dp" />
+
+        <View
+            android:id="@+id/hortDividerList"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="108dp"
+            android:background="#E8EAF6" />
+
+        <TextView
+            android:id="@+id/fromList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/from"
+            android:layout_marginRight="100dp"
+            android:textColor="#0E0E0E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="100dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/star"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_star_black_24dp"
+            app:civ_border_color="#D3FAF4"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/twonOneList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fromList"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="100dp"
+            android:text="@string/number"
+            android:textColor="#0C0C0C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="100dp" />
+
+        <TextView
+            android:id="@+id/toList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twonOneList"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/to"
+            android:layout_marginRight="150dp"
+            android:textColor="#B6B3B3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="150dp" />
+
+        <TextView
+            android:id="@+id/twonTwoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toList"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="150dp"
+            android:text="@string/abuja"
+            android:textColor="#C6C2C4"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="150dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/book"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/book"/>
+
+        <TextView
+            android:id="@+id/dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/abuja"
+            android:textColor="#FF2E96"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
